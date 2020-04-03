@@ -10,6 +10,8 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    
+    @IBOutlet weak var flag_BarButtonItem: UIBarButtonItem!
     @IBOutlet weak var tableView: UITableView!
     var myIndex: Int?
     var ArticleArray = [Article]()
@@ -20,7 +22,19 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+       
+//        let button = UIButton(type: .custom)
+//        //set image for button
+//        button.setImage(UIImage(named: "us"), for: .normal)
+//        //add function for button
+//        //set frame
+//        button.frame = CGRect(x: 0, y: 0, width: 10, height: 10)
+//
+//        let barButton = UIBarButtonItem(customView: button)
+//        //assign button to navigationbar
+//        self.navigationItem.rightBarButtonItem = barButton
+        
+        
         fetchArticlesJSON(fromSource: source)
         tableView.dataSource = self
         tableView.delegate = self
@@ -308,7 +322,7 @@ class HomeViewController: UIViewController {
             
             case .se:
                 self.title = "Sweden"
-                fetchArticlesJSON(fromSource: "Country=ar")
+                fetchArticlesJSON(fromSource: "Country=se")
                 break
             
             case .ch:

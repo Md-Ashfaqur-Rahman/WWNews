@@ -116,22 +116,21 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="United States" id="KVi-td-9Ho">
-                        <leftBarButtonItems>
-                            <barButtonItem title="Menu" image="line.horizontal.3.decrease" catalog="system" id="EQI-KP-EA5">
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <connections>
-                                    <action selector="didTapMenu:" destination="BYZ-38-t0r" id="eP6-00-E0d"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem title="Item" image="flag.fill" catalog="system" id="5kF-xo-GZb">
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <connections>
-                                    <action selector="didTapCountry:" destination="BYZ-38-t0r" id="QwK-1x-Lt5"/>
-                                </connections>
-                            </barButtonItem>
-                        </leftBarButtonItems>
+                        <barButtonItem key="leftBarButtonItem" title="Menu" image="line.horizontal.3" catalog="system" id="EQI-KP-EA5">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="didTapMenu:" destination="BYZ-38-t0r" id="eP6-00-E0d"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="flag.fill" catalog="system" id="5kF-xo-GZb">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="didTapCountry:" destination="BYZ-38-t0r" id="QwK-1x-Lt5"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="flag_BarButtonItem" destination="5kF-xo-GZb" id="bPM-ed-7OP"/>
                         <outlet property="tableView" destination="O6z-it-bG0" id="ct5-ku-NWM"/>
                         <segue destination="oWj-gQ-wrn" kind="show" identifier="detailsView" id="IQn-2r-wms"/>
                     </connections>
@@ -158,8 +157,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="92"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paperplane" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="6dY-fv-DrR">
-                                                    <rect key="frame" x="16" y="34.5" width="24" height="23.5"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="001-handshake" translatesAutoresizingMaskIntoConstraints="NO" id="6dY-fv-DrR">
+                                                    <rect key="frame" x="16" y="34" width="24" height="24"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="24" id="kT1-p5-GDO"/>
                                                         <constraint firstAttribute="width" constant="24" id="p1x-OY-XQt"/>
@@ -197,8 +196,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="92"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="faceid" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="b3c-Dk-TU5">
-                                                    <rect key="frame" x="16" y="35" width="24" height="21.5"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="002-film" translatesAutoresizingMaskIntoConstraints="NO" id="b3c-Dk-TU5">
+                                                    <rect key="frame" x="16" y="34" width="24" height="24"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="24" id="Vwe-pH-nEB"/>
                                                         <constraint firstAttribute="width" constant="24" id="evC-jb-jpq"/>
@@ -236,8 +235,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="92"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aspectratio" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="LR7-HG-exx">
-                                                    <rect key="frame" x="16" y="35" width="24" height="21.5"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="004-window" translatesAutoresizingMaskIntoConstraints="NO" id="LR7-HG-exx">
+                                                    <rect key="frame" x="16" y="34" width="24" height="24"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="24" id="ds1-aE-XjW"/>
                                                         <constraint firstAttribute="width" constant="24" id="gDt-ap-9yx"/>
@@ -275,8 +274,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="92"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smiley" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zCn-cj-6WW">
-                                                    <rect key="frame" x="16" y="34.5" width="24" height="23"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="003-heart" translatesAutoresizingMaskIntoConstraints="NO" id="zCn-cj-6WW">
+                                                    <rect key="frame" x="16" y="34" width="24" height="24"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="24" id="c14-zW-gRR"/>
                                                         <constraint firstAttribute="height" constant="24" id="gjU-kF-z8p"/>
@@ -314,8 +313,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="92"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scribble" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Q2l-Hb-Lhu">
-                                                    <rect key="frame" x="16" y="33" width="24" height="22"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="005-microscope" translatesAutoresizingMaskIntoConstraints="NO" id="Q2l-Hb-Lhu">
+                                                    <rect key="frame" x="16" y="34" width="24" height="24"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="24" id="9VC-eC-li9"/>
                                                         <constraint firstAttribute="width" constant="24" id="RNG-NS-cJ3"/>
@@ -353,8 +352,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="92"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sportscourt" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Z4y-wW-orq">
-                                                    <rect key="frame" x="16" y="35" width="24" height="22"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="007-trophy" translatesAutoresizingMaskIntoConstraints="NO" id="Z4y-wW-orq">
+                                                    <rect key="frame" x="16" y="34" width="24" height="24"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="24" id="f2V-eH-T8z"/>
                                                         <constraint firstAttribute="width" constant="24" id="fQd-kI-6z9"/>
@@ -392,8 +391,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="92"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="HGY-zR-p8z">
-                                                    <rect key="frame" x="16" y="35.5" width="24" height="21"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="006-dashboard" translatesAutoresizingMaskIntoConstraints="NO" id="HGY-zR-p8z">
+                                                    <rect key="frame" x="16" y="34" width="24" height="24"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="24" id="0DU-l6-bG2"/>
                                                         <constraint firstAttribute="height" constant="24" id="PaB-E6-xDl"/>
@@ -435,7 +434,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sZk-8e-pZn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1764" y="-572"/>
+            <point key="canvasLocation" x="1764" y="-572.56371814092961"/>
         </scene>
         <!--Country View Controller-->
         <scene sceneID="AZA-2m-qq1">
@@ -1970,7 +1969,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="92" id="U6q-v4-ath">
-                                        <rect key="frame" x="0.0" y="2454" width="375" height="92"/>
+                                        <rect key="frame" x="0.0" y="3606" width="375" height="92"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="U6q-v4-ath" id="7PQ-xx-iyT">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="92"/>
@@ -2009,7 +2008,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="92" id="laH-q2-soQ">
-                                        <rect key="frame" x="0.0" y="2546" width="375" height="92"/>
+                                        <rect key="frame" x="0.0" y="3698" width="375" height="92"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="laH-q2-soQ" id="Q1X-EZ-C75">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="92"/>
@@ -2048,7 +2047,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="92" id="ALA-g3-HkQ">
-                                        <rect key="frame" x="0.0" y="2638" width="375" height="92"/>
+                                        <rect key="frame" x="0.0" y="3790" width="375" height="92"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ALA-g3-HkQ" id="aEl-ri-SCe">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="92"/>
@@ -2087,7 +2086,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="92" id="Kaa-ae-Ltq">
-                                        <rect key="frame" x="0.0" y="2730" width="375" height="92"/>
+                                        <rect key="frame" x="0.0" y="3882" width="375" height="92"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Kaa-ae-Ltq" id="X1d-Ol-pXi">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="92"/>
@@ -2126,7 +2125,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="92" id="pet-4P-7Hu">
-                                        <rect key="frame" x="0.0" y="2822" width="375" height="92"/>
+                                        <rect key="frame" x="0.0" y="3974" width="375" height="92"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pet-4P-7Hu" id="vt5-eT-rrF">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="92"/>
@@ -2165,7 +2164,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="92" id="4d2-TO-clg">
-                                        <rect key="frame" x="0.0" y="2914" width="375" height="92"/>
+                                        <rect key="frame" x="0.0" y="4066" width="375" height="92"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4d2-TO-clg" id="NfE-eY-uRA">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="92"/>
@@ -2204,7 +2203,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="92" id="M9i-lk-q7M">
-                                        <rect key="frame" x="0.0" y="3006" width="375" height="92"/>
+                                        <rect key="frame" x="0.0" y="4158" width="375" height="92"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="M9i-lk-q7M" id="Tth-GF-s60">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="92"/>
@@ -2243,7 +2242,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="92" id="KU7-kD-Csa">
-                                        <rect key="frame" x="0.0" y="3098" width="375" height="92"/>
+                                        <rect key="frame" x="0.0" y="4250" width="375" height="92"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KU7-kD-Csa" id="il3-yK-Hre">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="92"/>
@@ -2688,14 +2687,19 @@
         </scene>
     </scenes>
     <resources>
+        <image name="001-handshake" width="256" height="256"/>
+        <image name="002-film" width="256" height="256"/>
+        <image name="003-heart" width="256" height="256"/>
+        <image name="004-window" width="256" height="256"/>
+        <image name="005-microscope" width="256" height="256"/>
+        <image name="006-dashboard" width="256" height="256"/>
+        <image name="007-trophy" width="256" height="256"/>
         <image name="ae" width="320" height="160"/>
         <image name="ar" width="320" height="200"/>
-        <image name="aspectratio" catalog="system" width="128" height="93"/>
         <image name="at" width="320" height="213"/>
         <image name="au" width="320" height="160"/>
         <image name="be" width="320" height="277"/>
         <image name="bg" width="320" height="192"/>
-        <image name="book" catalog="system" width="128" height="101"/>
         <image name="br" width="320" height="224"/>
         <image name="ca" width="320" height="160"/>
         <image name="ch" width="320" height="320"/>
@@ -2705,7 +2709,6 @@
         <image name="cz" width="320" height="213"/>
         <image name="de" width="320" height="192"/>
         <image name="eg" width="320" height="213"/>
-        <image name="faceid" catalog="system" width="128" height="114"/>
         <image name="flag.fill" catalog="system" width="128" height="121"/>
         <image name="fr" width="320" height="213"/>
         <image name="gb" width="320" height="160"/>
@@ -2719,7 +2722,7 @@
         <image name="it" width="320" height="213"/>
         <image name="jp" width="320" height="213"/>
         <image name="kr" width="320" height="213"/>
-        <image name="line.horizontal.3.decrease" catalog="system" width="128" height="73"/>
+        <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
         <image name="lt" width="320" height="192"/>
         <image name="lv" width="320" height="160"/>
         <image name="mo" width="320" height="213"/>
@@ -2729,7 +2732,6 @@
         <image name="nl" width="320" height="213"/>
         <image name="no" width="320" height="233"/>
         <image name="nz" width="320" height="160"/>
-        <image name="paperplane" catalog="system" width="128" height="121"/>
         <image name="ph" width="320" height="160"/>
         <image name="photo.fill" catalog="system" width="128" height="93"/>
         <image name="pl" width="320" height="200"/>
@@ -2738,13 +2740,10 @@
         <image name="rs" width="320" height="213"/>
         <image name="ru" width="320" height="213"/>
         <image name="sa" width="320" height="213"/>
-        <image name="scribble" catalog="system" width="128" height="109"/>
         <image name="se" width="320" height="200"/>
         <image name="sg" width="320" height="213"/>
         <image name="si" width="320" height="160"/>
         <image name="sk" width="320" height="213"/>
-        <image name="smiley" catalog="system" width="128" height="121"/>
-        <image name="sportscourt" catalog="system" width="128" height="83"/>
         <image name="th" width="320" height="213"/>
         <image name="tr" width="320" height="213"/>
         <image name="tw" width="320" height="213"/>
