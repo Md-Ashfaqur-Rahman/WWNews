@@ -1,9 +1,9 @@
 //
-//  ViewController.swift
-//  SlideInTransition
+//  HomeViewController.swift
+//  WWNews
 //
-//  Created by Gary Tokman on 1/12/19.
-//  Copyright © 2019 Gary Tokman. All rights reserved.
+//  Created by Md Ashfaqur Rahman on 20/3/20.
+//  Copyright © 2020 Md Ashfaqur Rahma. All rights reserved.
 //
 
 import UIKit
@@ -397,7 +397,7 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
             }.resume()
         }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 200
+        return 230
         
     }
     
@@ -441,12 +441,12 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let sendData = segue.destination as! DetailsViewController
-        sendData.detailsImage = ArticleArray[myIndex!].urlToImage
-        sendData.detailsTitle = ArticleArray[myIndex!].title
-        sendData.detailsTime = ArticleArray[myIndex!].publishedAt
-        sendData.detailsPublisher = ArticleArray[myIndex!].author
-        sendData.detailsContent = ArticleArray[myIndex!].content
-        sendData.weburl = ArticleArray[myIndex!].url
+        sendData.detailsImage = ArticleArray[myIndex!].urlToImage ?? ""
+        sendData.detailsTitle = ArticleArray[myIndex!].title ?? ""
+        sendData.detailsTime = ArticleArray[myIndex!].publishedAt ?? ""
+        sendData.detailsPublisher = ArticleArray[myIndex!].author ?? ""
+        sendData.detailsContent = ArticleArray[myIndex!].content ?? ""
+        sendData.weburl = ArticleArray[myIndex!].url ?? ""
         
     }
 }

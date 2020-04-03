@@ -1,9 +1,9 @@
 //
 //  SlideInTransition.swift
-//  SlideInTransition
+//  WWNews
 //
-//  Created by Gary Tokman on 1/13/19.
-//  Copyright © 2019 Gary Tokman. All rights reserved.
+//  Created by Md Ashfaqur Rahman on 20/3/20.
+//  Copyright © 2020 Md Ashfaqur Rahma. All rights reserved.
 //
 
 import UIKit

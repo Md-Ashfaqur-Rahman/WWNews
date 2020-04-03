@@ -1,9 +1,9 @@
 //
 //  TitleTableViewCell.swift
-//  News Reader
+//  WWNews
 //
-//  Created by macOS Mojave on 18/5/19.
-//  Copyright © 2019 macOS Mojave. All rights reserved.
+//  Created by Md Ashfaqur Rahman on 20/3/20.
+//  Copyright © 2020 Md Ashfaqur Rahma. All rights reserved.
 //
 
 import UIKit
