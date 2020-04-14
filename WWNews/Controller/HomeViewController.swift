@@ -42,7 +42,7 @@ class HomeViewController: UIViewController {
 
     @IBAction func didTapMenu(_ sender: UIBarButtonItem) {
         
-        guard let menuViewController = storyboard?.instantiateViewController(withIdentifier: "MenuViewController") as? MenuViewController else { return }
+        guard let menuViewController = storyboard?.instantiateViewController(withIdentifier: "CatagoryMenuViewController") as? CatagoryMenuViewController else { return }
         menuViewController.didTapMenuType = { menuType in
             self.transitionToNew(menuType)
         }
@@ -55,13 +55,13 @@ class HomeViewController: UIViewController {
 
     @IBAction func didTapCountry(_ sender: UIBarButtonItem) {
         
-        guard let CountryViewController = storyboard?.instantiateViewController(withIdentifier: "CountryViewController") as? CountryViewController else { return }
-        CountryViewController.didTapCountryType = { countryType in
+        guard let CountryMenuViewController = storyboard?.instantiateViewController(withIdentifier: "CountryMenuViewController") as? CountryMenuViewController else { return }
+        CountryMenuViewController.didTapCountryType = { countryType in
             self.transitionToNewCountry(countryType)
         }
-        CountryViewController.modalPresentationStyle = .overCurrentContext
-        CountryViewController.transitioningDelegate = self
-        present(CountryViewController, animated: true)
+        CountryMenuViewController.modalPresentationStyle = .overCurrentContext
+        CountryMenuViewController.transitioningDelegate = self
+        present(CountryMenuViewController, animated: true)
         
     }
     
@@ -324,6 +324,7 @@ class HomeViewController: UIViewController {
                 self.title = "Sweden"
                 fetchArticlesJSON(fromSource: "Country=se")
                 break
+            
             
             case .ch:
                 self.title = "Switzerland"

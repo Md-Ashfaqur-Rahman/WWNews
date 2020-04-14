@@ -65,7 +65,7 @@ enum CountryType: Int {
     case ve
 }
 
-class CountryViewController: UITableViewController {
+class CountryMenuViewController: UITableViewController {
 
     var didTapCountryType: ((CountryType) -> Void)?
 

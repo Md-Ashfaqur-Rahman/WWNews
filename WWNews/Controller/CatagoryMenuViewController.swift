@@ -18,7 +18,7 @@ enum MenuType: Int {
     case technology
 }
 
-class MenuViewController: UITableViewController {
+class CatagoryMenuViewController: UITableViewController {
 
     var didTapMenuType: ((MenuType) -> Void)?
 
