@@ -20,11 +20,8 @@ class DetailsViewController: UIViewController {
     
     @IBOutlet weak var detailsImageView: UIImageView!
     @IBOutlet weak var detailsTitleView: UILabel!
-    
     @IBOutlet weak var detailsTimeView: UILabel!
-    
     @IBOutlet weak var detailsPublisherView: UILabel!
-    
     @IBOutlet weak var detailsContentView: UITextView!
     
     

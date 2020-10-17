@@ -22,6 +22,7 @@ class WebViewController: UIViewController, WKUIDelegate {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         if containWebURL != "" {
             let myURL = URL(string:containWebURL)
             let myRequest = URLRequest(url: myURL!)
