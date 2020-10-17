@@ -13,6 +13,7 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var flag_BarButtonItem: UIBarButtonItem!
     @IBOutlet weak var tableView: UITableView!
+    
     var myIndex: Int?
     var ArticleArray = [Article]()
     var source = "country=us"
